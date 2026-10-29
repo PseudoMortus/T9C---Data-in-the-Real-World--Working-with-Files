@@ -11,7 +11,7 @@ class Program
         var lines = File.ReadAllLines("Data to Clean/Data to Automatically Clean.csv");
         var cleanedData = new List<string> { lines[0] };
         for (int i = 1; i < lines.Length; i++) cleanedData.Add(CleanLine(lines[i]));
-        File.WriteAllLines("Cleaned_Data.csv", cleanedData);
+        File.WriteAllLines("JSON Conversion/Cleaned_Data.csv", cleanedData);
         Console.WriteLine("Data cleaning completed. Cleaned data saved to Cleaned_Data.csv");
     }
     
